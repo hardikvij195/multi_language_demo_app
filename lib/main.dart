@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -45,6 +47,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    // String hello = "Hello";
+
+    // var abc = utf8.encode("hardik");
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Demo"),
@@ -54,7 +60,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
+              // utf8.decode(abc),
+              //hello
               'title'.tr(),
+              // utf8.decode("Hello"),
             ),
             const SizedBox(
               height: 30,
